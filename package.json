@@ -1,0 +1,21 @@
+{
+  "name": "package-tracker",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon ./src/modules/index.js -e js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.1",
+    "moment": "^2.24.0",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {
+    "electron": "^7.1.7",
+    "nodemon": "^2.0.2"
+  }
+}

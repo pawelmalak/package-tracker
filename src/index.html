@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>📦 Package Tracker</title>
+  <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <main id="main">
+
+    <header id="header">
+
+      <h1 class="headline-intro">Twoje paczki</h1>
+
+    </header>
+
+    <section id="section-packages">
+
+      <div class="card">
+        <h2 class="card-title">Książka</h2>
+        <div class="card-details-grid">
+          <h3>Ostatnia aktualizacja</h3>
+          <h3>10 minut temu</h3>
+          <h3>3</h3>
+          <h3>4</h3>
+          <h3>5</h3>
+          <h3>6</h3>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2 class="card-title">Książka</h2>
+        <div class="card-details-grid">
+          <h3>Ostatnia aktualizacja</h3>
+          <h3>10 minut temu</h3>
+          <h3>3</h3>
+          <h3>4</h3>
+          <h3>5</h3>
+          <h3>6</h3>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Książka</h2>
+        <div class="card-details-grid">
+          <h3>Ostatnia aktualizacja</h3>
+          <h3>10 minut temu</h3>
+          <h3>3</h3>
+          <h3>4</h3>
+          <h3>5</h3>
+          <h3>6</h3>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Książka</h2>
+        <div class="card-details-grid">
+          <h3>Ostatnia aktualizacja</h3>
+          <h3>10 minut temu</h3>
+          <h3>3</h3>
+          <h3>4</h3>
+          <h3>5</h3>
+          <h3>6</h3>
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+  <script>
+    const customTitlebar = require('custom-electron-titlebar');
+
+    new customTitlebar.Titlebar({
+      backgroundColor: customTitlebar.Color.fromHex('#102a42'),
+      titleHorizontalAlignment: 'left',
+      menu: null
+    });
+  </script>
+
+</body>
+</html>
