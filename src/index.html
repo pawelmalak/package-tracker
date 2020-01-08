@@ -16,6 +16,7 @@
     <header id="header">
 
       <h1 class="headline-intro">Twoje paczki</h1>
+      <button class="btn btn-primary" id="btn-newPackage">Dodaj paczkę</button>
 
     </header>
 
@@ -76,10 +77,22 @@
     const customTitlebar = require('custom-electron-titlebar');
 
     new customTitlebar.Titlebar({
-      backgroundColor: customTitlebar.Color.fromHex('#102a42'),
+      backgroundColor: customTitlebar.Color.fromHex('#2680c2'),
       titleHorizontalAlignment: 'left',
       menu: null
     });
+
+    function notify() {
+      const options = {
+        body: 'Paczka jest w drodze do sortowni regionalnej punktu odbioru \n testt \n tesyfg',
+        icon: './assets/img/icon.png',
+      }
+      const n = new Notification('Jedna z paczek właśnie zmieniła status!', options);
+    }
+
+    setInterval(notify, 5000);
+
+
   </script>
 
 </body>
