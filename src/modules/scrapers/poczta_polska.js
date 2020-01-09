@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
-const moment = require('moment');
-moment.locale('pl');
+
 /*
 
   getPackageDetails()

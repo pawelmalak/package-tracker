@@ -39,6 +39,10 @@ body {
   margin: 1.5rem 2rem 0;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn-primary {
   background: rgb(38, 128, 194);
   color: rgb(255, 255, 255);

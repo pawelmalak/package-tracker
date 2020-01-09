@@ -16,3 +16,4 @@ function createWindow () {
 }
 
 app.on('ready', createWindow);
+console.log(app.getAppPath());

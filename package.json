@@ -1,13 +1,22 @@
 {
   "name": "package-tracker",
   "version": "0.1.0",
-  "description": "",
+  "description": "test",
   "main": "./src/main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "nodemon ./src/modules/index.js -e js"
+    "dev": "nodemon ./src/modules/index.js -e js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "author": "",
+  "build": {
+    "appId": "a",
+    "mac": {
+      "category": "cat1"
+    },
+    "icon": "./src/assets/img/icon.png"
+  },
+  "author": "me",
   "license": "ISC",
   "dependencies": {
     "custom-electron-titlebar": "^3.2.1",
@@ -16,6 +25,7 @@
   },
   "devDependencies": {
     "electron": "^7.1.7",
+    "electron-builder": "^21.2.0",
     "nodemon": "^2.0.2"
   }
 }
