@@ -18,8 +18,8 @@ const getPackageDetails = async (packageNumber) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   
-  // await page.goto(`https://emonitoring.poczta-polska.pl/?numer=${packageNumber}`);
-  await page.goto(`http://localhost:3001/poczta`);
+  await page.goto(`https://emonitoring.poczta-polska.pl/?numer=${packageNumber}`);
+  // await page.goto(`http://localhost:3001/poczta`);
   
   const details = {
     status: await page.$eval('tr[class^="zdarzenia_"]:last-child > td:first-child', el => el.textContent),
